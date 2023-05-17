@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="variebles.css">
+    <link rel="stylesheet" href="elements.css">
+    <link rel="stylesheet" href="classes.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">LOGO</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#grid-one">grid-one</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#grid-two">grid-two</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>curso javascript css e html</h2>
+                <p>HTML e CSS da maneira certa e usando boas práticas da web, estruturando seu código para legibilidade
+                    e layouts verdadeiramente interessantes, com uso de bibliotecas e ferramentas. Sites responsivos,
+                    bootstrap, devtools, flexbox são assuntos importantes cobertos pelos cursos.</p>
+            </div>
+            <div class="intro-img">
+                <img src="img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Sabe quando você pode começar? Agora!</h2>
+        </div>
+    </section>
+
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">planos</h2>
+            <p class="grid-description">Uma breve descrição dos planos.</p>
+
+            <div class="grid">
+                <article>
+                    <h3>curso basico</h3>
+                    <p>Aqui aprenderar somente o basico sem enrolaçao</p>
+                </article>
+                <article>
+                    <h3>Curso avançado</h3>
+                    <p>No curso avançado voce aprenderar tudo sobre o assunto desde o basico a o avançado com projetos para o seu portifolio</p>
+                </article>
+                <article>
+                    <h3>Curso premium</h3>
+                    <p>Nao so aprende os demais como tera acesso a aulas ao vivo com professores.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2> Por onde começar com HTML e CSS</h2>
+            <p>A Web é a plataforma de programação mais importante do mundo, e é praticamente onipresente. Suas
+                tecnologias principais, o HTML e o CSS, são fundamentais para a criação de qualquer site.</p>
+
+            <p>Quem domina essas tecnologias, suas boas práticas e seus recursos mais avançados, tem espaço no mercado
+                de programação para front-end e pode participar da criação de plataformas incríveis.</p>
+            <p>A Formação HTML e CSS (nome do curso) foi pensada para você começar do zero e se tornar um profissional de
+                ponta. É um guia de estudos com um passo a passo pensado com carinho pela equipe</p>
+
+            <p>Os cursos dessa categoria ensinam, além do HTML e CSS, as bibliotecas e ferramentas mais importantes como
+                o Bootstrap, CSS Grid e Devtools. Conheça a Arquitetura CSS, aprofunde-se na Acessibilidade de um site e
+                entenda o protocolo da web: o HTTP.</p>
+
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+
+                    <thead>
+                        <tr>
+                            <th>1 curso</th>
+                            <th>2 curso</th>
+                            <th>3 curso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$799,99</td>
+                            <td>$1.499</td>
+                            <td>$3.799</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>curso javascript css e html</h2>
+                <p>HTML e CSS da maneira certa e usando boas práticas da web, estruturando seu código para legibilidade
+                    e layouts verdadeiramente interessantes, com uso de bibliotecas e ferramentas. Sites responsivos,
+                    bootstrap, devtools, flexbox são assuntos importantes cobertos pelos cursos.</p>
+            </div>
+            <div class="intro-img">
+                <img src="img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>fale conosco</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">primeiro nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">segundo nome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">enviar mensagem</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">❤</span> por Gustavo lime e voce</a>
+        </p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
